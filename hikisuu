@@ -1,0 +1,18 @@
+#!/usr/bin/python3
+import sys
+
+hucount = 0
+zerocount = 0
+seicount = 0
+for i in sys.argv[1:]:
+    j = float(i)
+    if j < 0.0:
+        hucount += 1
+    elif j > 0.0:
+        seicount += 1
+    else :
+        seicount += 1
+
+print("負の数の個数",hucount)
+print("ゼロの個数",zerocount)
+print("正の数の個数",seicount)
