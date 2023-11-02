@@ -1,5 +1,5 @@
 # plusコマンド
-![test](https://github.com/ryoheitsuchida/robosys2023/actions/workflows/test.yml/badge.svg)
+![test](https://github.com/Ryohei-Tsuchida/robosys2023/actions/workflows/test.yml/badge.svg)
 
 # robosys2023
 ロボットシステム学のプログラム
