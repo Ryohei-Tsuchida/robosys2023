@@ -4,11 +4,27 @@
 
 import sys
 
-ans = 0
-for line in sys.stdin:
+def get_numbers():
     try:
-        ans += int(line)
-    except:
-        ans += float(line)
+        return [float(e) for e in sys.argv[1:]]
+    except ValueError:
+        print("Error: Invalid command-line arguments. Please provide valid numbers.")
+        sys.exit(1)
 
-print(ans)
+def read_numbers_from_input():
+    try:
+        return [float(line) for line in sys.stdin]
+    except ValueError:
+        print("Error: Invalid input. Please provide valid numbers.")
+        sys.exit(1)
+
+def main():
+    if len(sys.argv) > 1:
+        nums = get_numbers()
+    else:
+        nums = read_numbers_from_input()
+
+    print(sum(nums))
+
+if __name__ == "__main__":
+    main()
