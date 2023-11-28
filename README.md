@@ -3,7 +3,7 @@
 
 plus
 
-標準入力から読み込んだ数字を足すプログラム。
+標準入力から読み込んだ数字を足すプログラム。  
 小数,整数,負の数の足し算をすることができ、丸め誤差にも対応しています。
 
 ## プログラムの使い方
@@ -19,7 +19,8 @@ seq -5 0.5 1.5 | ./plus  or  ./plus 5 -4.5 6 -10 -3 -7 -4 -7
 ## テスト環境
 * Ubuntu 20.04
 
+## ライセンス
 * このソフトウェアパッケージは，3条項BSDライセンスの下，再頒布および使用が許可されます．
 * このパッケージのコードの一部は，下記のplusのコード（CC-BY-SA 4.0 by Ryuichi Ueda）のものを，本人の許可を得て自身の著作としたものです．
-* [ryuichiueda/robosys2023](https://github.com/ryuichiueda/robosys2023)
+	* [ryuichiueda/robosys2023](https://github.com/ryuichiueda/robosys2023)  
 © 2023 Ryohei Tsuchida
