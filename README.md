@@ -1,7 +1,5 @@
-# robosys2023
+# plusコマンド
 [![test](https://github.com/Ryohei-Tsuchida/robosys2023/actions/workflows/test.yml/badge.svg)](https://github.com/Ryohei-Tsuchida/robosys2023/actions)
-
-plus
 
 標準入力から読み込んだ数字を足すプログラム.  
 小数,整数,負の数の足し算をすることができ，丸め誤差にも対応しています.
@@ -22,7 +20,7 @@ seq -5 0.5 1.5 | ./plus  or  ./plus 5 -4.5 6 -10 -3 -7 -4 -7
 端末に`git clone git@github.com:Ryohei-Tsuchida/robosys2023.git`と入力し，インストールします.
 
 ## 起動手順
-1. 端末に`cd robosys2023`と入力し，以下のコマンドを入力し，実行権限を付与する.
+1. 端末に`cd robosys2023`と入力し，以下のコマンドを入力し，実行権限を付与する.  
 	`chmod +x plus`
 2. プログラムの使い方通り，端末にコマンドを入力することで起動できる.
 
