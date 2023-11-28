@@ -1,30 +1,20 @@
 #!/usr/bin/python3
 # SPDX-FileCopyrightText:2023 Ryohei Tsuchida
-# SPDX-License-Identifier:BSD-3-Clause
+# SPDX-License-Identifier:BSD-3-Clau
 
 import sys
+from decimal import Decimal, getcontext
 
-def get_numbers():
-    try:
-        return [float(e) for e in sys.argv[1:]]
-    except ValueError:
-        print("Error: Invalid command-line arguments. Please provide valid numbers.")
-        sys.exit(1)
-
-def read_numbers_from_input():
-    try:
-        return [float(line) for line in sys.stdin]
-    except ValueError:
-        print("Error: Invalid input. Please provide valid numbers.")
-        sys.exit(1)
+getcontext().prec = 10
 
 def main():
     if len(sys.argv) > 1:
-        nums = get_numbers()
+        nums = [Decimal(e) for e in sys.argv[1:]]
     else:
-        nums = read_numbers_from_input()
+        nums = [Decimal(line) for line in sys.stdin]
 
     print(sum(nums))
 
-if __name__ == "__main__":
+if __name__ == '__main__':
+
     main()
